@@ -1,12 +1,19 @@
 # AlphaCamp_Data & AI - RecSys
 ## Session1: Rule-based Recommendation Algorithm Implementation
 * Reference: AC-Collegaues - Ana(yuchiahung) [Link](https://github.com/yuchiahung/data-course-sample/blob/main/hw1_Ana.ipynb)
+* [Link](https://github.com/phwangktw/data-course-sample/blob/main/Session1_Rule-based_Recommendation_Algorithm.ipynb)
 * What is Rule-based Recommendation Algorithm
 
+Content-based Recommendation is the model that recommend users new products based on hard-coding rules
 * How it works
+1. 以熱門產品為優先推送的產品，而熱門的定義可為「高評論數」、「高評價」。
+2. 因美妝商品去高度流行性，熱門商品的選擇尚須考慮不同時間區間。
 * Results
+1. 最終預測分數約為0.09
 ## Session2: Content-based Recommendation Algorithm Implementation
+* [Link](https://github.com/phwangktw/data-course-sample/blob/main/Session2_Content_based_Recommendation_Algorithm_ipynb.ipynb)
 * What is Content-based Recommendation Algorithm
+
 Content-based Recommendation is the model that recommend users new products based on its preference or historical purchasements.
 * How it works
 1. 藉由語意分析套件(`nltk`)先將產品分析出關鍵字, 並濾除無意義字 (縮小後續矩陣記憶體的使用)
