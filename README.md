@@ -33,7 +33,6 @@ Content-based Recommendation is the model that recommend users new products base
 * How it works
 * Results
 <br>
-
 | Method | Score | Improvement |
 | ----------- | ----------- |----------- |
 | Rule-based | 0.0983 |  base case|
