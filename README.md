@@ -25,9 +25,16 @@ Content-based Recommendation is the model that recommend users new products base
 1. AMZON All_beauty 使用者購買資料不足，並無顯見的進步。
 
 ## Session3: Collaborative-based Recommendation Algorithm Implementation
-* [Link:User-based](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(user-based)_Recommendation_Algorithm.ipynb)
-* [Link:Item-based](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(item-based)_Recommendation_Algorithm.ipynb)
-* [Link:Surprise package](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(surprise_package)_Recommendation_Algorithm.ipynb)
+* Links:
+ 1. [Link:User-based](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(user-based)_Recommendation_Algorithm.ipynb)
+ 2.  [Link:Item-based](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(item-based)_Recommendation_Algorithm.ipynb)
+ 3.  [Link:Surprise package](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(surprise_package)_Recommendation_Algorithm.ipynb)
 * What is Collaborative-based Recommendation Algorithm
 * How it works
 * Results
+| Method        | Score         | Improvement  |
+| ------------- |:-------------:| -----:|
+| Rule-based      | 0.0983 | - (base case) |
+| User-based      |  0.0983      |   0% |
+| Item-based | 0.0983      |    0% |
+| Surprise | 0.1000      |    1.7% |
