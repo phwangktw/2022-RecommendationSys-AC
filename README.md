@@ -39,3 +39,8 @@ Content-based Recommendation is the model that recommend users new products base
 | User-based    |  0.0983       |   0%          |
 | Item-based    | 0.0983        |    0%         |
 | Surprise      | 0.1000        |    1.7%       |
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
