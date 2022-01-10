@@ -38,3 +38,9 @@ Content-based Recommendation is the model that recommend users new products base
 | User-based      |  0.0983      |   0% |
 | Item-based | 0.0983      |    0% |
 | Surprise | 0.1000      |    1.7% |
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
