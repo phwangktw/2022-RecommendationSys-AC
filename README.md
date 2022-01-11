@@ -54,5 +54,5 @@ Content-based Recommendation is the model that recommend users new products base
  | Method | Score | Improvement | Computational time|
 | ----------- | ----------- |----------- |----------- |
 | Rule-based | 0.0983 |  base case| O(ms)
-| SVD  | 0.0983 | 0% |O(mins)
-| SVD++    | 0.0983        |    0%         |O(hr)
+| SVD  | 0.0966 | -1.7% |O(mins)
+| SVD++    | 0.0966        |    -1.7%         |O(hr)
