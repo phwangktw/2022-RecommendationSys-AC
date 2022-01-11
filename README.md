@@ -29,14 +29,16 @@ Content-based Recommendation is the model that recommend users new products base
  1. [Link:User-based](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(user-based)_Recommendation_Algorithm.ipynb)
  2.  [Link:Item-based](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(item-based)_Recommendation_Algorithm.ipynb)
  3.  [Link:Surprise package](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based(surprise_package)_Recommendation_Algorithm.ipynb)
-4.  [Link:Matrix Factorization](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based_Matrix-Factorization.ipynb)
+4.  [Link:Matrix Factorization](https://github.com/phwangktw/data-course-sample/blob/main/Session3_Collaborative-based_Matrix-Factorization.ipynb) ([Reference](https://github.com/yuchiahung/data-course-sample/tree/main/week3_CF))
 * What is Collaborative-based Recommendation Algorithm
 
 此次實作，先以手刻方式複現兩種Similarity Matrix(user-based, item-based)，與使用item-based combined with KNN (`SURPRISE` package)作為比較。
 * How it works
  1. 前兩者方式較為直觀，產生出量化的近似矩陣後，以產品或是使用者去搜尋topK推薦，較為複雜的操作為不同based間的格式轉換，與function可接受的input arguments.
+
 2. KNN則是以cosine similarity的方式定義與input item最為接近的K recommendation. (KNN概念要懂)
- 3. 接下來以MF實作的方式，以SVD拆解user-item的矩陣，採取足以近似的rank(letent feature)，概念與PCA雷同，以eigen-value/eigen-vector方式降維(取variability具代表性的)，產生出的`model`可用以預測未配對的user-item correlation，接著排序出topK(以預測分數高低)的推薦順序. (尚須釐清如何使用SVD矩陣預測的概念)
+
+ 3. 接下來以MF實作的方式，以SVD拆解user-item的矩陣，採取足以近似的rank(latent feature)，概念與PCA雷同，以eigen-value/eigen-vector方式降維(取variability具代表性的)，產生出的`model`可用以預測未配對的user-item correlation，接著排序出topK(以預測分數高低)的推薦順序. (尚須釐清如何使用SVD矩陣預測的概念)
 * Results
  1. Part I. Comparisons
 
@@ -45,6 +47,12 @@ Content-based Recommendation is the model that recommend users new products base
 | Rule-based | 0.0983 |  base case|
 | User-based  | 0.0983 | 0% |
 | Item-based    | 0.0983        |    0%         |
-| Surprise      | 0.1000        |    1.7%       |
+| Surprise (KNN)    | 0.1000        |    1.7%       |
 
  2. Part II. MF techniques
+
+ | Method | Score | Improvement | Computational time|
+| ----------- | ----------- |----------- |----------- |
+| Rule-based | 0.0983 |  base case| O(ms)
+| SVD  | 0.0983 | 0% |O(mins)
+| SVD++    | 0.0983        |    0%         |O(hr)
